@@ -1,0 +1,25 @@
+user_choice = input("Enter your choice (rock/paper/scissors): ").lower()
+
+
+computer_choice = "rock"
+
+
+if user_choice == computer_choice:
+    print(f"It's a tie! Both chose {user_choice}.")
+elif user_choice == "rock":
+    if computer_choice == "scissors":
+        print("You win! Rock beats scissors.")
+    else:
+        print("You lose! Paper beats rock.")
+elif user_choice == "paper":
+    if computer_choice == "rock":
+        print("You win! Paper beats rock.")
+    else:
+        print("You lose! Scissors beat paper.")
+elif user_choice == "scissors":
+    if computer_choice == "paper":
+        print("You win! Scissors beat paper.")
+    else:
+        print("You lose! Rock beats scissors.")
+else:
+    print("Invalid input. Please choose rock, paper, or scissors.")
